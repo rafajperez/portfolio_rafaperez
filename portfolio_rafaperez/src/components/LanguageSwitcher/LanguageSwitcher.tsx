@@ -1,39 +1,28 @@
 import React from 'react';
-
+import brasil from '../../assets/brasil.png';
+import eua from '../../assets/usa.png';
 interface LanguageSwitcherProps {
   idioma: string;
   onIdiomaChange: (novoIdioma: string) => void;
 }
 
 const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
-  idioma,
+  /*idioma, */
   onIdiomaChange,
 }) => {
   return (
     <div className="flex space-x-2">
       <button
         onClick={() => onIdiomaChange('pt')}
-        className={`w-8 h-8 rounded-full ${
-          idioma === 'pt' ? 'ring-2 ring-blue-500' : ''
-        }`}
+        className={`w-20 h-20 transform transition-transform duration-200 hover:scale-110`}
       >
-        <img
-          src="../../assets/brasil.png"
-          alt="Português"
-          className="rounded-full"
-        />
+        <img src={brasil} alt="Português" className="w-16 h-16 object-cover" />
       </button>
       <button
         onClick={() => onIdiomaChange('en')}
-        className={`w-8 h-8 rounded-full ${
-          idioma === 'en' ? 'ring-2 ring-blue-500' : ''
-        }`}
+        className={`w-20 h-20 transform transition-transform duration-200 hover:scale-110`}
       >
-        <img
-          src="../../assets/usa.png"
-          alt="English"
-          className="rounded-full"
-        />
+        <img src={eua} alt="English" className="w-16 h-16 object-cover" />
       </button>
     </div>
   );
