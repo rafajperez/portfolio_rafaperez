@@ -8,7 +8,7 @@ interface NavbarProps {
 
 export const NavBar: React.FC<NavbarProps> = () => {
   return (
-    <nav className="bg-bgDefaultDark bg-cover text-txtDefaultWhite p-2 top-0 z-50">
+    <nav className=" text-txtDefaultWhite p-2 top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <p className="font-bold ">
           <i> Rafael Perez </i>

@@ -7,7 +7,6 @@ interface LanguageSwitcherProps {
 }
 
 const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
-  /*idioma, */
   onIdiomaChange,
 }) => {
   return (
