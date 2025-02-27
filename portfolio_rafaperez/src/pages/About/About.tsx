@@ -13,18 +13,18 @@ const About: React.FC = () => {
   }, [idiomaAbout]);
 
   return (
-    <div className="h-screen  flex flex-col justify-center items-center">
-      <div className="text-white space-y-2">
-        <p className=" text-center ml-5 text-2x1 italic">
+    <div className=" mt-20 flex flex-wrap flex-col items-center">
+      <div className="text-white space-y-4 max-w-3xl">
+        <p className="text-left ml-5 text-lg italic whitespace-pre-line">
           {textosAbout.about.aboutDescricao1}
         </p>
-        <p className=" text-center ml-5 text-2xl italic">
+        <p className="text-left ml-5 text-lg italic whitespace-pre-line">
           {textosAbout.about.aboutDescricao2}
         </p>
-        <p className=" text-center ml-5 text-2xl italic">
+        <p className="text-left ml-5 text-lg italic whitespace-pre-line">
           {textosAbout.about.aboutDescricao3}
         </p>
-        <p className=" text-center ml-5 text-2xl italic">
+        <p className="text-left ml-5 text-lg italic whitespace-pre-line">
           {textosAbout.about.aboutDescricao4}
         </p>
       </div>

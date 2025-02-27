@@ -1,12 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-interface NavbarProps {
-  idioma: string;
-  onIdiomaChange: (novoIdioma: string) => void;
-}
-
-export const NavBar: React.FC<NavbarProps> = () => {
+export const NavBar = () => {
   return (
     <nav className=" text-txtDefaultWhite p-2 top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">

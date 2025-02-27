@@ -1,6 +1,7 @@
 import React from 'react';
 import brasil from '../../assets/brasil.png';
 import eua from '../../assets/usa.png';
+
 interface LanguageSwitcherProps {
   idioma: string;
   onIdiomaChange: (novoIdioma: string) => void;
